@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login & Signup Form | CodingNepal</title>
+    <link rel="stylesheet" href="Login_register.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title-text">
+        <div class="title login">Login Form</div>
+        <div class="title signup">Signup Form</div>
+      </div>
+      <div class="form-container">
+        <div class="slide-controls">
+          <input type="radio" name="slide" id="login" checked>
+          <input type="radio" name="slide" id="signup">
+          <label for="login" class="slide login">Login</label>
+          <label for="signup" class="slide signup">Signup</label>
+          <div class="slider-tab"></div>
+        </div>
+        <div class="form-inner">
+          <form action="#" class="login">
+            <div class="field">
+              <input type="text" placeholder="Email Address" required>
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Password" required>
+            </div>
+            <div class="pass-link"><a href="#">Forgot password?</a></div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Login">
+            </div>
+            <!-- Singup -->
+            <div class="signup-link">Not a member? <a href="">Signup now</a></div>
+          </form>
+          <form action="#" class="signup">
+            <div class="name-container">
+              <input type="text" class="name ele" placeholder="First Name">
+              <input type="text" class="surname ele" placeholder="Last Name">
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Password" required>
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Confirm password" required>
+            </div>
+            <div class="field">
+              <input type="text" placeholder="Department" required>
+            </div>
+            <div class="level-container">
+              <label for="level">Select Level:</label>
+              <select id="level" class="ele">
+                <option value="" disabled selected>Select your level</option>
+                <option value="1st vocational">ปวช.1</option>
+                <option value="2st vocational">ปวช.2</option>
+                <option value="3st vocational">ปวช.3</option>
+                <option value="1st higher-vocational">ปวส.1</option>
+                <option value="2st higher-vocational">ปวส.2</option>
+              </select>
+              <div class="role-container">
+        <label class="role-label">Role:</label>
+        <div class="role-options">
+            <input type="radio" id="role-teacher" name="role" value="teacher" class="role-radio">
+            <label for="role-teacher" class="role-option">Teacher</label>
+
+            <input type="radio" id="role-student" name="role" value="student" class="role-radio">
+            <label for="role-student" class="role-option">Student</label>
+        </div>
+    </div>
+              </div>
+              <div class="privacy-container">
+                <label>
+                  <input type="checkbox" name="privacy" value="allow">
+                  I agree to provide access to my personal information
+                </label>
+              </div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Signup">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+<script src="Login_register.js"></script>
+
+  </body>
+</html>

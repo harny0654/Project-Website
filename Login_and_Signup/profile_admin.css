@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+:root {
+    --main-color1: #017e81;
+    --main-color2: #00AA88;
+    --main-color3: #5CB99F;
+    --main-color4: #5AC5A9;
+    --main-color5: #72D1B7;
+    --main-color6: #5EF5BF;
+    --main-color7: #40E0D0;
+    --main-color8: #66CDAA;
+    --second-color: #edeae3;
+    --text-color: #1b1b1b;
+    --bg-color: #fff;
+    --box-shadow: 2px 2px 10px 4px rgba(14, 55, 54, 0.15);
+}
+body {
+    font-family: SFPro, Arial, Noto Sans JP, Noto Sans KR, sans-serif;
+    background: linear-gradient(to right, var(--main-color1), var(--main-color3), var(--main-color5), var(--main-color7), var(--main-color8));
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.profile-card, .profile-info {
+    background-color: var(--bg-color);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+}
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* จัดกึ่งกลางเนื้อหาภายใน */
+    text-align: center;
+    width: 30%;
+    background-color: #fff; /* สีพื้นหลังของการ์ด */
+    color: var(--text-color);
+    border-radius: 15px;
+    box-shadow: var(--box-shadow); /* เพิ่มเงาให้การ์ด */
+    padding: 30px;
+}
+
+.profile-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid var(--main-color1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.profile-card h2,h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--main-color2);
+    font-weight: bold;
+}
+.profile-card p {
+    font-size: 16px;
+    color: var(--main-color1);
+    margin-bottom: 10px;
+}
+.profile-card h3 {
+    margin-top: auto; /* ขยับ h3 ขึ้นไปข้างล่าง */
+}
+.profile-card input[type="file"] {
+    margin-top: 20px; /* ระยะห่างระหว่าง h3 และ input */
+}
+.profile-card a {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--main-color4);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.profile-card:hover {
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.2);
+}
+.profile-card a:hover {
+    background-color: var(--main-color2);
+}
+.profile-info {
+    width: 65%;
+}
+.profile-info h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: var(--main-color2);
+    border-bottom: 2px solid var(--main-color6);
+    padding-bottom: 10px;
+}
+.profile-info input[type="text"],
+.profile-info input[type="password"],
+.profile-info input[type="email"],
+.profile-info input[type="file"],
+.profile-info select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px; /* ลดระยะห่างระหว่างช่อง */
+    border: 1px solid var(--main-color5);
+    border-radius: 8px;
+    font-size: 16px;
+    color: var(--text-color);
+    background-color: var(--second-color);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-info input[readonly] {
+    background-color: var(--second-color);
+    cursor: not-allowed;
+}
+.profile-info input[type="text"]:focus,
+.profile-info input[type="password"]:focus,
+.profile-info input[type="email"]:focus,
+.profile-info input[type="file"]:focus {
+    border-color: var(--main-color2);
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.1);
+}
+.profile-info .edit-button {
+    padding: 15px 25px;
+    background: linear-gradient(135deg, var(--main-color1), var(--main-color2));
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.profile-info button:hover {
+    background: linear-gradient(135deg, var(--main-color2), var(--main-color3));
+    transform: scale(1.05);
+}
+
+.profile-info #status {
+    margin-top: -50px; /* ปรับค่านี้เพื่อขยับช่องขึ้น */
+}
+
+.upload-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* Dropdown Container */
+.dropdown-container {
+    margin-bottom: 20px;
+}
+
+.dropdown-container label {
+    display: block;
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+.dropdown-container select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid var(--main-color5);
+    border-radius: 8px;
+    font-size: 16px;
+    color: var(--text-color);
+    background-color: var(--second-color);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dropdown-container select:focus {
+    border-color: var(--main-color2);
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.1);
+}
+
+.profile-info h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: var(--main-color2);
+    border-bottom: 2px solid var(--main-color6);
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.profile-info button {
+    background: linear-gradient(135deg, var(--main-color1), var(--main-color2));
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    position: absolute; /* ทำให้ปุ่มวางในตำแหน่งที่ต้องการ */
+    right: 0;
+    top: 0;
+    margin-top: -10px; /* ขยับปุ่มขึ้นมาเล็กน้อย */
+    margin-right: 10px; /* เพิ่มระยะห่างจากขอบด้านขวา */
+}
+
+.profile-info button:hover {
+    background: linear-gradient(135deg, var(--main-color2), var(--main-color3));
+    transform: scale(1.05);
+}
+
+.profile-info button:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.2);
+}
+
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column; /* ปรับให้เป็นคอลัมน์เมื่อหน้าจอแคบ */
+        align-items: center;
+    }
+    .profile-card, .profile-info {
+        width: 100%; /* ขยายให้เต็มความกว้างของคอนเทนเนอร์ */
+        padding: 20px; /* ลดการ Padding สำหรับหน้าจอเล็ก */
+    }
+
+    .profile-card {
+        width: 100%; /* ทำให้การ์ดเต็มความกว้างของคอนเทนเนอร์ */
+    }
+
+    .profile-info {
+        width: 100%; /* ทำให้ข้อมูลผู้ใช้เต็มความกว้างของคอนเทนเนอร์ */
+    }
+}
+
+@media (max-width: 320px) {
+    .profile-card, .profile-info {
+        padding: 10px; /* ลด Padding ให้เล็กลง */
+    }
+
+    .profile-card {
+        width: 100%; /* ทำให้การ์ดเต็มความกว้างของคอนเทนเนอร์ */
+    }
+
+    .profile-info {
+        width: 100%; /* ทำให้ข้อมูลผู้ใช้เต็มความกว้างของคอนเทนเนอร์ */
+    }
+}

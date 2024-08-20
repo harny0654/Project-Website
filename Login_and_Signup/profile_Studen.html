@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profile_Studen.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="profile-card">
+        <img src="https://i.pinimg.com/originals/7f/74/6c/7f746c162b2dfcee0665b5b76c264b53.jpg" alt="Avatar" id="profilePicture">
+        <h2>Student</h2>
+        <p>ชื่อ-สกุล</p>
+        <a href="edit_Studen.html" class="edit-button">แก้ไข</a>
+        
+    </div>
+
+    <div class="profile-info">
+        <h3>ข้อมูลผู้ใช้</h3>
+        <input type="text" placeholder="ชื่อ" id="firstName" readonly>
+        <input type="text" placeholder="นามสกุล" id="lastName" readonly>
+        <input type="password" placeholder="รหัสผ่าน" id="password" readonly>
+        <input type="email" placeholder="อีเมล" id="email" readonly>
+        
+        <!-- Dropdown for Department -->
+        <div class="dropdown-container">
+            <select id="department" disabled>
+                <option value="0"></option>
+                <option value="1">ปวช.1</option>
+                <option value="2">ปวช.2</option>
+                <option value="3">ปวช.3</option>
+                <option value="4">ปวส.1</option>
+                <option value="5">ปวส.2</option>
+            </select>
+        </div>
+        <input type="text" placeholder="นักศึกษา/อาจารย์" id="status" readonly>
+        
+        <!-- เพิ่มฟอร์มสำหรับใส่โค้ดและอัพโหลดรูปภาพ -->
+        <h3>ใส่โค้ดและอัพโหลดภาพที่นี่</h3>
+        <input type="text" placeholder="ใส่โค้ดที่นี่" id="codeInput">
+        <input type="file" accept="image/*" id="imageUpload">
+        <img id="previewImageDisplay" style="max-width: 100%; margin-top: 20px;" alt="Image Preview">
+
+    </div>
+</div>
+<footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="profile_Studen.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Signup Form | CodingNepal</title>
+    <link rel="stylesheet" href="Login_register_Admin.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title-text">
+            <div class="title signup">Signup Admin</div>
+        </div>
+        <div class="form-container">
+            <form action="#" class="signup">
+                <div class="name-container">
+                    <input type="text" class="name ele" placeholder="First Name" required>
+                    <input type="text" class="surname ele" placeholder="Last Name" required>
+                </div>
+                
+                <div class="field">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="Confirm Password" required>
+                </div>
+                <div class="field">
+                    <input type="text" placeholder="Department" required>
+                </div>
+                <div class="level-container">
+                    <label for="level">Select Level:</label>
+                    <select id="level" class="ele" required>
+                        <option value="" disabled selected>Select your level</option>
+                        <option value="1st vocational">ปวช.1</option>
+                        <option value="2nd vocational">ปวช.2</option>
+                        <option value="3rd vocational">ปวช.3</option>
+                        <option value="1st higher-vocational">ปวส.1</option>
+                        <option value="2nd higher-vocational">ปวส.2</option>
+                    </select>
+                </div>
+                <div class="role-container">
+                    <label class="role-label">Role:</label>
+                    <div class="role-options">
+                        <input type="radio" id="role-teacher" name="role" value="teacher" class="role-radio">
+                        <label for="role-teacher" class="role-option">Teacher</label>
+
+                        <input type="radio" id="role-student" name="role" value="student" class="role-radio">
+                        <label for="role-student" class="role-option">Student</label>
+                    </div>
+                </div>
+                <div class="privacy-container">
+                    <label>
+                        <input type="checkbox" name="privacy" value="allow" required>
+                        I agree to provide access to my personal information
+                    </label>
+                </div>
+                <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Signup">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="Login_register.js"></script>
+</body>
+</html>
