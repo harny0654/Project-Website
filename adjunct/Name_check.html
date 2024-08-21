@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Card</title>
+<link rel="stylesheet" href="Name_check.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <label for="year-select">ชั้นปี</label>
+            <select id="year-select">
+                <option value="ปี 1">ปี 1</option>
+                <option value="ปี 2">ปี 2</option>
+                <option value="ปี 3">ปี 3</option>
+                <option value="ปี 4">ปี 4</option>
+            </select>
+           
+        </div>
+        <div class="card" onclick="navigateToPage('เทคโนโลยีสารสนเทศ')">
+            <div class="text">เทคโนโลยีสารสนเทศ</div>
+        </div>
+        <div class="card" onclick="navigateToPage('คอมพิวเตอร์กราฟิก')">
+            <div class="text">คอมพิวเตอร์กราฟิก</div>
+        </div>
+        <div class="card" onclick="navigateToPage('การโรงแรม')">
+            <div class="text">การโรงแรม</div>
+        </div>
+    </div>
+
+<script src="Name_check.js"></script>
+</body>
+</html>
